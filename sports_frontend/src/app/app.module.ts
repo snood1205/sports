@@ -7,18 +7,21 @@ import {RouterModule, Routes} from '@angular/router'
 import {TeamsComponent} from './teams/teams.component'
 import {TeamService} from '../common/services/team.service'
 import {HttpModule, RequestOptions} from '@angular/http'
-import {CustomRequestOptions} from '../common/options/custom-request.options'
+import {CustomRequestOptions} from '../common/options/custom-request.options';
+import { ScoresComponent } from './scores/scores.component'
 
 const appRoutes: Routes = [
   {path: 'teams', component: TeamsComponent},
-  {path: 'team/:id', component: TeamComponent}
+  {path: 'team/:id', component: TeamComponent},
+  {path: 'scores', component: ScoresComponent}
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
     TeamComponent,
-    TeamsComponent
+    TeamsComponent,
+    ScoresComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

@@ -1,5 +1,12 @@
-<h1>Sports!</h1>
-<nav>
-  <a routerLink="/teams" routerLinkActive="active">Teams</a>
+<nav class="navbar navbar-toggleable-md navbar-light">
+  <div class="navbar-collapse">
+    <div class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" routerLink="/teams" routerLinkActive="active">Teams</a></li>
+      <li class="nav-item"><a class="nav-link" routerLink="/scores" routerLinkActive="active">Scores</a></li>
+    </div>
+  </div>
 </nav>
-<router-outlet></router-outlet>
+<h1>Sports!</h1>
+<div>
+  <router-outlet></router-outlet>
+</div>
